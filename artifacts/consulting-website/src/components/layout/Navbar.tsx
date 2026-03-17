@@ -1,85 +1,58 @@
 import { Link, useLocation } from "wouter"
 import { cn } from "@/lib/utils"
-import { Menu, X } from "lucide-react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
+import { X, Menu } from "lucide-react"
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/experience", label: "Experience" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/projects", label: "Projects" },
+  { href: "/case-studies", label: "Work" },
   { href: "/contact", label: "Contact" },
 ]
 
 export function Navbar() {
   const [location] = useLocation()
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  const [open, setOpen] = useState(false)
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-        isScrolled ? "bg-white/90 backdrop-blur-md border-border shadow-sm py-3" : "bg-transparent py-5"
-      )}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-foreground hover:opacity-70 transition-opacity">
-            Kai Rinne
-          </Link>
+    <header className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex items-center justify-between bg-white/90 backdrop-blur-sm">
+      <Link href="/" className="text-sm font-medium tracking-widest uppercase text-foreground hover:opacity-50 transition-opacity">
+        Kai Rinne
+      </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary relative py-1",
-                  location === link.href ? "text-foreground" : "text-muted-foreground"
-                )}
-              >
-                {link.label}
-                {location === link.href && (
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-foreground rounded-full" />
-                )}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            className="md:hidden p-2 -mr-2 text-foreground"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Menu"
+      <nav className="hidden md:flex items-center gap-10">
+        {NAV_LINKS.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={cn(
+              "text-sm tracking-wide transition-opacity",
+              location === link.href
+                ? "text-foreground"
+                : "text-muted-foreground hover:text-foreground hover:opacity-70"
+            )}
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
+            {link.label}
+          </Link>
+        ))}
+      </nav>
 
-      {/* Mobile Nav */}
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-border shadow-lg py-4 px-4 flex flex-col gap-4">
+      <button
+        className="md:hidden text-foreground"
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle menu"
+      >
+        {open ? <X size={20} /> : <Menu size={20} />}
+      </button>
+
+      {open && (
+        <div className="md:hidden fixed inset-0 top-16 bg-white z-40 flex flex-col gap-8 px-8 py-12">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={cn(
-                "block py-2 text-base font-medium",
-                location === link.href ? "text-foreground" : "text-muted-foreground"
-              )}
-              onClick={() => setMobileMenuOpen(false)}
+              className="text-2xl font-light text-foreground"
+              onClick={() => setOpen(false)}
             >
               {link.label}
             </Link>
