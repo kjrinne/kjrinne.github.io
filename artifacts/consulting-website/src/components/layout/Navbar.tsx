@@ -29,13 +29,13 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-        isScrolled ? "bg-white/80 backdrop-blur-md border-border shadow-sm py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white/90 backdrop-blur-md border-border shadow-sm py-3" : "bg-transparent py-5"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold tracking-tighter text-foreground hover:opacity-80 transition-opacity">
-            [Name]
+          <Link href="/" className="text-xl font-bold tracking-tighter text-foreground hover:opacity-70 transition-opacity">
+            Kai Rinne
           </Link>
 
           {/* Desktop Nav */}
@@ -46,12 +46,12 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-primary relative py-1",
-                  location === link.href ? "text-primary" : "text-muted-foreground"
+                  location === link.href ? "text-foreground" : "text-muted-foreground"
                 )}
               >
                 {link.label}
                 {location === link.href && (
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-foreground rounded-full" />
                 )}
               </Link>
             ))}
@@ -77,7 +77,7 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "block py-2 text-base font-medium",
-                location === link.href ? "text-primary" : "text-muted-foreground"
+                location === link.href ? "text-foreground" : "text-muted-foreground"
               )}
               onClick={() => setMobileMenuOpen(false)}
             >

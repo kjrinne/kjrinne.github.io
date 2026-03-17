@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <Link href="/" className="text-lg font-bold tracking-tighter text-foreground block mb-2">
-            [Name]
+            Kai Rinne
           </Link>
           <p className="text-sm text-muted-foreground">
             Strategic Thinker. Operator. Aspiring Consultant.
@@ -25,7 +25,7 @@ export function Footer() {
         </div>
         
         <div className="text-sm text-muted-foreground text-center md:text-right">
-          © {currentYear} [Name]. All rights reserved.
+          © {currentYear} Kai Rinne. All rights reserved.
         </div>
       </div>
     </footer>
