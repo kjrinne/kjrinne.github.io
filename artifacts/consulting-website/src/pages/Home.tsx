@@ -33,37 +33,6 @@ export default function Home() {
           </div>
         </FadeIn>
       </section>
-
-      {/* What I Do — lean, horizontal list */}
-      <section className="w-full border-t border-border bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <FadeIn>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-              <div>
-                <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">01</p>
-                <h3 className="text-base font-bold text-foreground mb-2">Strategy & Problem Solving</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Applying frameworks to untangle ambiguity and chart a clear path forward.
-                </p>
-              </div>
-              <div>
-                <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">02</p>
-                <h3 className="text-base font-bold text-foreground mb-2">Leadership & Execution</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Turning high-level strategy into ground-level action — proven across teams and revenue goals.
-                </p>
-              </div>
-              <div>
-                <p className="text-xs font-semibold tracking-widest uppercase text-muted-foreground mb-3">03</p>
-                <h3 className="text-base font-bold text-foreground mb-2">Data & Analysis</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Leveraging data to support research-backed insights and actionable recommendations.
-                </p>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
     </div>
   )
 }
