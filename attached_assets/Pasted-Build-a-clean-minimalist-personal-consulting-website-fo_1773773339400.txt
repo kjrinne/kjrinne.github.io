@@ -1,0 +1,103 @@
+Build a clean, minimalist personal consulting website for a college student pursuing strategy consulting roles. The website should feel professional, structured, and similar in style to a top consulting firm (like McKinsey or BCG), but still personal.
+
+DESIGN STYLE:
+- Minimalist, lots of white space
+- Black, white, and subtle gray color palette
+- Clean modern font (like Inter or Helvetica)
+- Smooth scrolling and subtle animations
+- Mobile responsive
+- Fast loading
+
+OVERALL GOAL:
+The site should immediately communicate:
+“This person is structured, strategic, and already thinks like a consultant.”
+
+NAVIGATION BAR:
+- Home
+- About
+- Experience
+- Case Studies
+- Projects
+- Contact
+
+HOME PAGE:
+- Strong headline:
+  “Strategic Thinker. Operator. Aspiring Consultant.”
+- Subheadline:
+  “I break down complex problems, build structured solutions, and execute with discipline.”
+- Short intro paragraph:
+  A BYU Strategic Management student with experience in strategy, sales leadership, and research.
+- Section: “What I Do”
+  - Strategy & Problem Solving
+  - Leadership & Execution
+  - Data & Analysis
+- Section: Featured Experience (3 highlights)
+- Section: Featured Case Study (preview)
+- Call to action: “View My Work” and “Get in Touch”
+
+ABOUT PAGE:
+- Story-driven narrative:
+  - Background (BYU, interest in strategy)
+  - Mission experience → leadership + people skills
+  - Transition into business, consulting, and strategy
+- Emphasize:
+  - Leadership
+  - Ability to connect with people
+  - Breaking down messy problems
+
+EXPERIENCE PAGE:
+Create clean sections for each role with bullet points.
+
+Include:
+Business Strategy Intern
+- Built and launched website and digital infrastructure
+- Organized project workflows and supported growth strategy execution
+
+Field Strategy & Sales Lead
+- Generated $80K personal revenue in 4 months
+- Contributed to $140K team revenue
+- Recruited, trained, and led a small sales team
+- Conducted performance reviews and strategy planning
+
+Undergraduate Research Assistant
+- Analyzed data and contributed to research-backed strategy insights
+
+Mission Leadership Role
+- Led and mentored 80+ individuals
+- Conducted trainings and supported performance improvement
+
+CASE STUDIES PAGE:
+Create 2–3 sample case studies (structured like consulting work)
+
+Each case study should include:
+- Problem
+- Approach
+- Key Insights
+- Recommendation
+
+Example topics:
+1. Growth strategy for a pest control company
+2. Scaling a service-based startup through digital channels
+3. Improving operational performance in a team-based organization
+
+PROJECTS PAGE:
+- River Beacon Consulting
+  Description of building digital presence and supporting strategy
+- Add placeholders for future projects
+
+CONTACT PAGE:
+- Simple, clean
+- “Let’s connect”
+- Email form
+- Optional: “Open to consulting opportunities”
+
+FOOTER:
+- Clean, minimal
+- LinkedIn link
+- Copyright
+
+EXTRA:
+- Add subtle hover effects
+- Make transitions smooth
+- Use clean section spacing
+- Prioritize readability and structure

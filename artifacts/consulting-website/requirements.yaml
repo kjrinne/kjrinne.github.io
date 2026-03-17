@@ -1,0 +1,19 @@
+packages:
+  "framer-motion": "For smooth scroll fade-in animations and page transitions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation in forms"
+  "clsx": "For merging class names in UI components"
+  "tailwind-merge": "For resolving Tailwind CSS class conflicts"
+
+images:
+  - path: "artifacts/consulting-website/public/images/abstract-hero.png"
+    description: "Minimalist abstract geometric shapes in pure white, light gray, and subtle black, corporate consulting style, clean background"
+    aspect_ratio: "16:9"
+  - path: "artifacts/consulting-website/public/images/case-study-bg.png"
+    description: "Very subtle abstract topographic map lines in light gray on white background, minimal corporate style"
+    aspect_ratio: "16:9"
+
+notes:
+  - Pure frontend application simulating a personal consulting portfolio.
+  - Forms are frontend-only simulations using toasts.
+  - Wouter used for routing.
