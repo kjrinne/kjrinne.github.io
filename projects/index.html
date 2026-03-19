@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &mdash; Kai Rinne</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; left: 0; right: 0; background: white; border-bottom: 1px solid #f0f0f0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
+    nav a { text-decoration: none; color: #111; }
+    .nav-logo { font-weight: 700; font-size: 0.95rem; border: 1.5px solid #111; padding: 0.3rem 0.5rem; letter-spacing: 0.02em; }
+    .nav-links { display: flex; gap: 2rem; font-size: 0.8rem; letter-spacing: 0.03em; }
+    .nav-links a { color: #555; }
+    .nav-links a:hover { color: #111; }
+    main { max-width: 700px; margin: 0 auto; padding: 7rem 2rem 5rem; }
+    .page-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-bottom: 3.5rem; }
+    .case { margin-bottom: 3.5rem; border-top: 1px solid #f0f0f0; padding-top: 2rem; }
+    .case:first-of-type { border-top: none; padding-top: 0; }
+    .case-number { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #ccc; margin-bottom: 0.75rem; }
+    .case-title { font-size: 1.05rem; font-weight: 600; margin-bottom: 1.75rem; }
+    .case-row { display: grid; grid-template-columns: 140px 1fr; gap: 0.75rem 2rem; margin-bottom: 0.9rem; align-items: baseline; }
+    .case-label { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: #aaa; padding-top: 0.1rem; }
+    .case-value { font-size: 0.825rem; color: #333; line-height: 1.6; }
+    @media (max-width: 600px) {
+      .nav-links { gap: 1.25rem; }
+      main { padding: 6rem 1.25rem 4rem; }
+      .case-row { grid-template-columns: 1fr; gap: 0.2rem; margin-bottom: 1rem; }
+      .case-label { margin-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">KR</a>
+    <div class="nav-links">
+      <a href="/about">About</a>
+      <a href="/resume">Resume</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <p class="page-label">Projects</p>
+
+    <div class="case">
+      <div class="case-number">Case 01</div>
+      <div class="case-title">Growth Strategy for a Regional Pest Control Company</div>
+      <div class="case-row">
+        <div class="case-label">Problem</div>
+        <div class="case-value">Stagnant revenue growth, over-reliance on door-to-door sales.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Approach</div>
+        <div class="case-value">Market segmentation, competitive analysis, digital channel assessment.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Insights</div>
+        <div class="case-value">Untapped commercial segment, weak digital presence, strong local brand equity.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Recommendation</div>
+        <div class="case-value">Expand into commercial accounts, invest in SEO/digital marketing, formalize referral program.</div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-number">Case 02</div>
+      <div class="case-title">Scaling a Service-Based Startup Through Digital Channels</div>
+      <div class="case-row">
+        <div class="case-label">Problem</div>
+        <div class="case-value">Service-based startup struggling to scale beyond local referrals.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Approach</div>
+        <div class="case-value">Customer journey mapping, funnel analysis, channel benchmarking.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Insights</div>
+        <div class="case-value">High CAC from referrals alone, strong conversion once leads arrive, missed content marketing opportunities.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Recommendation</div>
+        <div class="case-value">Launch targeted digital ad campaigns, build content strategy, implement CRM for lead nurturing.</div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-number">Case 03</div>
+      <div class="case-title">Improving Operational Performance in a Team-Based Organization</div>
+      <div class="case-row">
+        <div class="case-label">Problem</div>
+        <div class="case-value">Declining team performance and inconsistent output quality.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Approach</div>
+        <div class="case-value">Root cause analysis, individual performance reviews, process mapping.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Insights</div>
+        <div class="case-value">Unclear expectations, lack of structured feedback loops, low morale from recognition gaps.</div>
+      </div>
+      <div class="case-row">
+        <div class="case-label">Recommendation</div>
+        <div class="case-value">Implement weekly 1:1s, create performance scorecards, build structured recognition program.</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
