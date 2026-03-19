@@ -16,8 +16,12 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-8 py-6 flex items-center justify-between bg-white/90 backdrop-blur-sm">
-      <Link href="/" className="text-sm font-medium tracking-widest uppercase text-foreground hover:opacity-50 transition-opacity">
-        Kai Rinne
+      <Link href="/" className="hover:opacity-70 transition-opacity">
+        <svg width="36" height="36" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="180" height="180" fill="#ffffff"/>
+          <rect x="4" y="4" width="172" height="172" fill="none" stroke="#111111" strokeWidth="8"/>
+          <text x="90" y="127" fontSize="90" fontFamily="-apple-system,BlinkMacSystemFont,Inter,Arial,sans-serif" fill="#111111" textAnchor="middle" fontWeight="800" letterSpacing="-4">KR</text>
+        </svg>
       </Link>
 
       <nav className="hidden md:flex items-center gap-10">

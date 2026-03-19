@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex-1 flex flex-col justify-center">
         <FadeIn>
           <h1 className="text-[12vw] sm:text-[10vw] lg:text-[9vw] font-bold tracking-tighter text-foreground leading-[0.9] mb-10">
-            Kai<br />Rinne.
+            Kai<br />Rinne
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-sm font-light leading-relaxed">
             Strategic Management student at BYU.<br />
