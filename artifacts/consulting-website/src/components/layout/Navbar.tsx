@@ -28,7 +28,7 @@ export function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className="tracking-wide transition-opacity text-foreground text-[15px]"
+            className="tracking-wide transition-opacity text-foreground text-[14px]"
           >
             {link.label}
           </Link>
