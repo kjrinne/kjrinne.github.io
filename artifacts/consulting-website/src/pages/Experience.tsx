@@ -48,9 +48,8 @@ export default function Experience() {
   return (
     <div className="min-h-screen px-8 pt-36 pb-20">
       <FadeIn>
-        <p className="text-xs tracking-widest uppercase text-muted-foreground mb-16">Experience</p>
+        <p className="text-xs tracking-widest uppercase text-muted-foreground mb-16">Resume</p>
       </FadeIn>
-
       <div className="max-w-3xl space-y-20">
         {experiences.map((exp, idx) => (
           <FadeIn key={idx} delay={idx * 0.1}>
@@ -74,5 +73,5 @@ export default function Experience() {
         ))}
       </div>
     </div>
-  )
+  );
 }

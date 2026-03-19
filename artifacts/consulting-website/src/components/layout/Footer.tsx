@@ -5,7 +5,7 @@ export function Footer() {
         © {new Date().getFullYear()} Kai Rinne
       </span>
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/kai-rinne/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
