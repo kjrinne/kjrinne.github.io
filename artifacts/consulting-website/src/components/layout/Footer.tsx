@@ -1,9 +1,6 @@
 export function Footer() {
   return (
-    <footer className="px-8 py-8 flex items-center justify-between border-t border-border/40 mt-32">
-      <span className="text-xs tracking-widest uppercase text-muted-foreground">
-        © {new Date().getFullYear()} Kai Rinne
-      </span>
+    <footer className="px-8 py-8 flex items-center justify-end border-t border-border/40 mt-32">
       <a
         href="https://www.linkedin.com/in/kai-rinne/"
         target="_blank"
