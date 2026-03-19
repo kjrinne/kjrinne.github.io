@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume &mdash; Kai Rinne</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #111; -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; left: 0; right: 0; background: white; border-bottom: 1px solid #f0f0f0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
+    nav a { text-decoration: none; color: #111; }
+    .nav-logo { font-weight: 700; font-size: 0.95rem; border: 1.5px solid #111; padding: 0.3rem 0.5rem; letter-spacing: 0.02em; }
+    .nav-links { display: flex; gap: 2rem; font-size: 0.8rem; letter-spacing: 0.03em; }
+    .nav-links a { color: #555; }
+    .nav-links a:hover { color: #111; }
+    main { max-width: 700px; margin: 0 auto; padding: 7rem 2rem 5rem; }
+    .page-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-bottom: 3.5rem; }
+    section { margin-bottom: 3rem; }
+    h2 { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-bottom: 1.5rem; }
+    .entry { margin-bottom: 2rem; }
+    .entry-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; }
+    .entry-left { flex: 1; }
+    .entry-right { text-align: right; flex-shrink: 0; }
+    .entry-role { font-size: 0.875rem; font-weight: 600; }
+    .entry-company { font-size: 0.8rem; color: #555; margin-top: 0.15rem; }
+    .entry-meta { font-size: 0.75rem; color: #999; margin-top: 0.1rem; }
+    ul { list-style: none; margin-top: 0.6rem; }
+    ul li { font-size: 0.8rem; color: #444; line-height: 1.6; padding: 0.2rem 0 0.2rem 0.875rem; border-left: 1.5px solid #e8e8e8; margin-bottom: 0.25rem; }
+    .skills-list li { padding-left: 0; border-left: none; }
+    @media (max-width: 600px) {
+      .entry-header { flex-direction: column; gap: 0.25rem; }
+      .entry-right { text-align: left; }
+      .nav-links { gap: 1.25rem; }
+      main { padding: 6rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="nav-logo">KR</a>
+    <div class="nav-links">
+      <a href="/about">About</a>
+      <a href="/resume">Resume</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <p class="page-label">Resume</p>
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Brigham Young University &ndash; Marriott School of Business</div>
+            <div class="entry-company">Bachelor of Science in Strategic Management</div>
+            <div class="entry-meta">GPA 3.90 / 4.00 &middot; Corporate Strategy Association &middot; BYU Management Consulting Association</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Provo, UT</div>
+            <div class="entry-meta">April 2028</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Business Strategy Intern</div>
+            <div class="entry-company">River Beacon Consulting</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Provo, UT</div>
+            <div class="entry-meta">January 2026 &ndash; Present</div>
+          </div>
+        </div>
+        <ul>
+          <li>Execute founder-defined growth strategy by building content systems, digital platforms, and media channels to scale brand and customer engagement.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Undergraduate Research Assistant</div>
+            <div class="entry-company">Brigham Young Marriott School of Business</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Provo, UT</div>
+            <div class="entry-meta">January 2026 &ndash; Present</div>
+          </div>
+        </div>
+        <ul>
+          <li>Support faculty research by analyzing data, reviewing literature, shaping research questions, and evaluating strategic opportunities with industry input.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">In-Field Mentor</div>
+            <div class="entry-company">The Church of Jesus Christ of Latter-Day Saints</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Provo, UT</div>
+            <div class="entry-meta">August 2025 &ndash; January 2026</div>
+          </div>
+        </div>
+        <ul>
+          <li>Led and mentored 12+ new missionaries through a structured 12-week program, conducting weekly virtual sessions and providing personalized follow-up.</li>
+          <li>Facilitated feedback-driven training, setting goals, tracking progress, and collaborating with supervisors to ensure continuous improvement.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Field Strategy &amp; Sales Lead</div>
+            <div class="entry-company">Momentum Marketing</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Dallas, TX</div>
+            <div class="entry-meta">May 2025 &ndash; August 2025</div>
+          </div>
+        </div>
+        <ul>
+          <li>Recruited, trained, and managed a sales team through one-on-one coaching, shadowing, and daily team meetings.</li>
+          <li>Led territory planning and set daily goals to maximize door-to-door outreach results.</li>
+          <li>Met weekly with the sales manager and local branch leadership to review performance and strategy.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Field Sales Associate</div>
+            <div class="entry-company">Dewey Pest Control</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Chico, CA</div>
+            <div class="entry-meta">May 2022 &ndash; August 2022</div>
+          </div>
+        </div>
+        <ul>
+          <li>Sold pest control services door-to-door, coordinated delivery routes, and managed 200 customer accounts.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Data Insights &amp; Visualization Analyst</div>
+            <div class="entry-company">Brigham Young University Hawaii</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Laie, HI</div>
+            <div class="entry-meta">January 2022 &ndash; April 2022</div>
+          </div>
+        </div>
+        <ul>
+          <li>Analyzed Facilities Management operations at BYU&ndash;Hawaii, designed decision-driving dashboards, and presented strategic recommendations to leadership.</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Leadership &amp; Service</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Full-time Representative</div>
+            <div class="entry-company">The Church of Jesus Christ of Latter-Day Saints</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Helsinki, Finland</div>
+            <div class="entry-meta">November 2022 &ndash; December 2024</div>
+          </div>
+        </div>
+        <ul>
+          <li>Led and coordinated a team of 80+ missionaries across Finland, conducting regular trainings, meetings, and field visits to support growth and well-being.</li>
+          <li>Managed mission data and outreach efforts, preparing reports and fostering interfaith relationships through collaboration with community and religious leaders.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-left">
+            <div class="entry-role">Volunteer Tutor</div>
+            <div class="entry-company">Brookline Literacy Partnership</div>
+          </div>
+          <div class="entry-right">
+            <div class="entry-meta">Boston, MA</div>
+            <div class="entry-meta">September 2017 &ndash; June 2021</div>
+          </div>
+        </div>
+        <ul>
+          <li>Tutored children grades 1&ndash;4 from an underprivileged area of inner-city Boston.</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Skills &amp; Certifications</h2>
+      <ul class="skills-list">
+        <li>Experienced in SQL, R, Python, Microsoft Excel, and DOMO platform</li>
+        <li>Fluent in Finnish</li>
+        <li>Certified in Teaching Language as a Foreign Language (TEFL)</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
