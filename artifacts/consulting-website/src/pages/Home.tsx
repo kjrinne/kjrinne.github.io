@@ -2,7 +2,7 @@ import { FadeIn } from "@/components/animations/FadeIn"
 
 export default function Home() {
   return (
-    <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <div className="min-h-screen flex flex-col justify-center">
       {/* Left: text */}
       <div className="flex flex-col justify-center px-8 lg:px-16 pt-32 pb-16">
         <FadeIn>
@@ -16,14 +16,5 @@ export default function Home() {
         </FadeIn>
       </div>
 
-      {/* Right: photo */}
-      <div className="hidden lg:block relative h-screen sticky top-0">
-        <img
-          src={`${import.meta.env.BASE_URL}profile-photo.png`}
-          alt="Kai Rinne"
-          className="absolute inset-0 w-full h-full object-cover object-top"
-        />
-      </div>
-    </div>
   )
 }

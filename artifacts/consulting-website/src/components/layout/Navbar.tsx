@@ -42,7 +42,7 @@ export function Navbar() {
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
       {open && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white z-40 flex flex-col gap-8 px-8 py-12">
+        <div className="md:hidden fixed inset-0 top-16 bg-white z-40 flex flex-col gap-8 px-8 py-12" style={{top: '4rem', left: 0, right: 0, bottom: 0, backgroundColor: '#ffffff'}} style={{top: '4rem', left: 0, right: 0, bottom: 0, backgroundColor: '#ffffff'}}>
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

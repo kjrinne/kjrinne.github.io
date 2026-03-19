@@ -40,7 +40,7 @@ export default function About() {
       </div>
 
       {/* Right: photo */}
-      <div className="hidden lg:flex items-center justify-center sticky top-0 h-screen">
+      <div className="flex items-center justify-center py-8 lg:sticky lg:top-0 lg:h-screen">
         <img
           src={`${import.meta.env.BASE_URL}about-photo.png`}
           alt="Kai Rinne"
