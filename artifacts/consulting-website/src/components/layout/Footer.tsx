@@ -5,10 +5,10 @@ export function Footer() {
         href="https://www.linkedin.com/in/kai-rinne/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xs tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+        className="tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors text-[15px]"
       >
         LinkedIn
       </a>
     </footer>
-  )
+  );
 }
