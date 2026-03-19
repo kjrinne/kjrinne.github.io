@@ -11,28 +11,34 @@
     <script type="module" crossorigin src="/assets/index-4T7NJLew.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DSknEL55.css">
         <style>
-                /* Mobile menu full-height white overlay fix */
-                      @media (max-width: 767px) {
-                              header > div.md\:hidden {
-                                        position: fixed !important;
-                                                  top: 4rem !important;
-                                                            left: 0 !important;
-                                                                      right: 0 !important;
-                                                                                bottom: 0 !important;
-                                                                                          height: calc(100vh - 4rem) !important;
-                                                                                                    background-color: #ffffff !important;
-                                                                                                              z-index: 40 !important;
-                                                                                                                        overflow-y: auto !important;
-                                                                                                                                }
-                                                                                                                                      }
-                                                                                                                                          </style>
+            /* Mobile menu full-height white overlay fix */
+            @media (max-width: 767px) {
+                header > div.md\:hidden {
+                    position: fixed !important;
+                    top: 4rem !important;
+                    left: 0 !important;
+                    right: 0 !important;
+                    bottom: 0 !important;
+                    height: calc(100vh - 4rem) !important;
+                    background-color: #ffffff !important;
+                    z-index: 40 !important;
+                    overflow-y: auto !important;
+                }
+            }
+        </style>
   <script>
-    // Force full-page navigation for static routes, bypassing React Router
+    // Rewrite old route hrefs to new ones, and force full-page nav (bypasses React Router)
+    function fixLinks() {
+      document.querySelectorAll('a[href="/experience"]').forEach(function(a) { a.setAttribute('href', '/resume'); });
+      document.querySelectorAll('a[href="/case-studies"]').forEach(function(a) { a.setAttribute('href', '/projects'); });
+    }
+    fixLinks();
+    new MutationObserver(fixLinks).observe(document.documentElement, { childList: true, subtree: true });
     document.addEventListener('click', function(e) {
       var link = e.target.closest('a');
       if (!link) return;
       var href = link.getAttribute('href');
-      if (href === '/resume' || href === '/experience' || href === '/projects' || href === '/case-studies') {
+      if (href === '/resume' || href === '/projects') {
         e.stopImmediatePropagation();
         e.preventDefault();
         window.location.href = href;
