@@ -26,6 +26,19 @@
                                                                                                                                 }
                                                                                                                                       }
                                                                                                                                           </style>
+  <script>
+    // Force full-page navigation for static routes, bypassing React Router
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (!link) return;
+      var href = link.getAttribute('href');
+      if (href === '/resume' || href === '/experience' || href === '/projects' || href === '/case-studies') {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        window.location.href = href;
+      }
+    }, true);
+  </script>
   </head>
   <body>
     <div id="root"></div>
