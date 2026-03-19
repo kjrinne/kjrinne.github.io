@@ -28,9 +28,8 @@ export default function CaseStudies() {
   return (
     <div className="min-h-screen px-8 pt-36 pb-20">
       <FadeIn>
-        <p className="text-xs tracking-widest uppercase text-muted-foreground mb-16">Work</p>
+        <p className="text-xs tracking-widest uppercase text-muted-foreground mb-16">Projects</p>
       </FadeIn>
-
       <div className="max-w-3xl space-y-24">
         {cases.map((study, idx) => (
           <FadeIn key={idx} delay={idx * 0.1}>
@@ -62,5 +61,5 @@ export default function CaseStudies() {
         ))}
       </div>
     </div>
-  )
+  );
 }
