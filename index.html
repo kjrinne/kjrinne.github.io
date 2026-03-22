@@ -15,26 +15,7 @@
         }
       }
     </style>
-    <script>
-      // Intercept ALL old+new route clicks and force full-page navigation
-      function fixLinks() {
-        document.querySelectorAll('a[href="/experience"]').forEach(function(a) { a.setAttribute('href', '/resume'); });
-        document.querySelectorAll('a[href="/case-studies"]').forEach(function(a) { a.setAttribute('href', '/projects'); });
-      }
-      fixLinks();
-      new MutationObserver(fixLinks).observe(document.documentElement, { childList: true, subtree: true });
-      document.addEventListener('click', function(e) {
-        var link = e.target.closest('a');
-        if (!link) return;
-        var href = link.getAttribute('href');
-        var map = { '/resume': '/resume', '/projects': '/projects', '/experience': '/resume', '/case-studies': '/projects' };
-        if (map[href]) {
-          e.stopImmediatePropagation();
-          e.preventDefault();
-          window.location.href = map[href];
-        }
-      }, true);
-    </script>
+
   </head>
   <body>
     <div id="root"></div>
