@@ -5,7 +5,7 @@ import { X, Menu } from "lucide-react"
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
-  { href: "/experience", label: "Resume" },
+  { href: "/resume", label: "Resume" ,
   { href: "/case-studies", label: "Projects" },
   { href: "/contact", label: "Contact" },
 ]
