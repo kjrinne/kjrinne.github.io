@@ -10,8 +10,8 @@ export default function Home() {
             Kai<br />Rinne
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground max-w-sm font-light leading-relaxed">
-            Strategic Management student at BYU.<br />
-            Strategy, leadership, and execution.
+                        Pre-Business at BYU<br />
+                        Strategy, leadership, and systems
           </p>
         </FadeIn>
       </div>
