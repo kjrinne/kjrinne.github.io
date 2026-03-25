@@ -80,8 +80,8 @@ export default function Contact() {
 
       <FadeIn delay={0.3}>
         <div className="mt-20 pt-10 border-t border-border/40 space-y-3">
-          <a href="mailto:hello@example.com" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-            hello@example.com
+          <a href="mailto:hello@kairinne.com" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
+            hello@kairinne.com
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
             LinkedIn ↗
