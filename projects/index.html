@@ -9,11 +9,12 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Inter', sans-serif; background: #fff; color: #111; -webkit-font-smoothing: antialiased; }
-    nav { position: fixed; top: 0; left: 0; right: 0; background: white; border-bottom: 1px solid #f0f0f0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
+    nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.9); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
     nav a { text-decoration: none; color: #111; }
-    .nav-logo { font-weight: 700; font-size: 0.95rem; border: 1.5px solid #111; padding: 0.3rem 0.5rem; letter-spacing: 0.02em; }
-    .nav-links { display: flex; gap: 2rem; font-size: 0.8rem; letter-spacing: 0.03em; }
-    .nav-links a { color: #555; }
+    .nav-logo { display: block; line-height: 0; transition: opacity 0.2s; }
+    .nav-logo:hover { opacity: 0.7; }
+    .nav-links { display: flex; gap: 2.5rem; font-size: 14px; letter-spacing: 0.025em; }
+    .nav-links a { color: #111; }
     .nav-links a:hover { color: #111; }
     main { max-width: 900px; margin: 0 auto; padding: 7rem 2rem 5rem; }
     .page-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-bottom: 0.75rem; }
@@ -37,7 +38,13 @@
 </head>
 <body>
   <nav>
-    <a href="/" class="nav-logo">KR</a>
+    <a href="/" class="nav-logo" aria-label="Home">
+      <svg width="36" height="36" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+        <rect width="180" height="180" fill="#ffffff"/>
+        <rect x="4" y="4" width="172" height="172" fill="none" stroke="#111111" stroke-width="8"/>
+        <text x="90" y="127" font-size="90" font-family="-apple-system,BlinkMacSystemFont,Inter,Arial,sans-serif" fill="#111111" text-anchor="middle" font-weight="800" letter-spacing="-4">KR</text>
+      </svg>
+    </a>
     <div class="nav-links">
       <a href="/about">About</a>
       <a href="/resume">Resume</a>
