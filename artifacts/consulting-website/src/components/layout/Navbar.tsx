@@ -3,12 +3,21 @@ import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { X, Menu } from "lucide-react"
 
+// Resume and Projects are standalone HTML pages (resume/index.html, projects/index.html),
+// so they need a full page load instead of client-side routing.
 const NAV_LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/resume", label: "Resume" ,
-  { href: "/case-studies", label: "Projects" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "About", external: false },
+  { href: "/resume/", label: "Resume", external: true },
+  { href: "/projects/", label: "Projects", external: true },
+  { href: "/contact", label: "Contact", external: false },
 ]
+
+function NavLink({ link, className, onClick }: { link: typeof NAV_LINKS[number]; className: string; onClick?: () => void }) {
+  if (link.external) {
+    return <a href={link.href} className={className} onClick={onClick}>{link.label}</a>
+  }
+  return <Link href={link.href} className={className} onClick={onClick}>{link.label}</Link>
+}
 
 export function Navbar() {
   const [location] = useLocation()
@@ -25,13 +34,11 @@ export function Navbar() {
       </Link>
       <nav className="hidden md:flex items-center gap-10">
         {NAV_LINKS.map((link) => (
-          <Link
+          <NavLink
             key={link.href}
-            href={link.href}
+            link={link}
             className="tracking-wide transition-opacity text-foreground text-[14px]"
-          >
-            {link.label}
-          </Link>
+          />
         ))}
       </nav>
       <button
@@ -42,16 +49,14 @@ export function Navbar() {
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
       {open && (
-        <div className="md:hidden fixed inset-0 top-16 bg-white z-40 flex flex-col gap-8 px-8 py-12" style={{top: '4rem', left: 0, right: 0, bottom: 0, backgroundColor: '#ffffff'}} style={{top: '4rem', left: 0, right: 0, bottom: 0, backgroundColor: '#ffffff'}}>
+        <div className="md:hidden fixed inset-0 top-16 bg-white z-40 flex flex-col gap-8 px-8 py-12" style={{top: '4rem', left: 0, right: 0, bottom: 0, backgroundColor: '#ffffff'}}>
           {NAV_LINKS.map((link) => (
-            <Link
+            <NavLink
               key={link.href}
-              href={link.href}
+              link={link}
               className="text-2xl font-light text-foreground"
               onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
+            />
           ))}
         </div>
       )}

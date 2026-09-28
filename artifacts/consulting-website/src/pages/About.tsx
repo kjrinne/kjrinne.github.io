@@ -20,12 +20,12 @@ export default function About() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p>
-              The thread continued everywhere I went. A year at BYU Hawaii, learning to spearfish and living alongside students from seventy countries. A couple of months of traveling through unfamiliar cities, sleeping on couches, befriending strangers, taking buses to explore the vast unknown. Two years in Finland, knocking on doors through cold dark winters, learning the language, connecting with strangers, and coming to love the people I served. An upcoming service trip to Romania, leading 20 youth in working with refugee and Roma communities. Each chapter was different, but the instinct was the same. Walk toward what's unfamiliar. Figure out what connects. Unfamiliar ground has always been my best classroom.
+              The thread continued everywhere I went. A year at BYU Hawaii, learning to spearfish and living alongside students from seventy countries. A couple of months of traveling through unfamiliar cities, sleeping on couches, befriending strangers, taking buses to explore the vast unknown. Two years in Finland, knocking on doors through cold dark winters, learning the language, connecting with strangers, and coming to love the people I served. A summer in Romania, leading two groups of 20 teenagers in serving Roma children in Baia Mare. Each chapter was different, but the instinct was the same. Walk toward what's unfamiliar. Figure out what connects. Unfamiliar ground has always been my best classroom.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
             <p>
-              I started college thinking I wanted to work in data analytics. Turns out what I actually love is not just the data, but the layer beyond: the frameworks, the strategy, the presenting, the building of ideas. The technical and the strategic both feel like home. I switched to business, found my way to case competitions, and something clicked into place. The bridge building, the language learning, the years of crossing into worlds that weren't mine. It was all pointing somewhere. I'm starting to see where.
+              I started college thinking I wanted to work in data analytics. Turns out what I actually love is not just the data, but the layer beyond: the frameworks, the strategy, the presenting, the building of ideas. The technical and the strategic both feel like home. I landed in economics with a minor in strategic management, found my way to case competitions, and something clicked into place. The bridge building, the language learning, the years of crossing into worlds that weren't mine. It was all pointing somewhere. I'm starting to see where.
             </p>
           </FadeIn>
           <FadeIn delay={0.4}>
@@ -34,6 +34,17 @@ export default function About() {
             </p>
           </FadeIn>
         </div>
+      </div>
+
+      {/* Right: photo */}
+      <div className="px-8 lg:pt-36 pb-20">
+        <FadeIn delay={0.15} className="lg:sticky lg:top-36">
+          <img
+            src={`${import.meta.env.BASE_URL}kai-portrait.jpg`}
+            alt="Kai Rinne"
+            className="w-full max-w-md lg:ml-auto aspect-[4/5] object-cover object-top"
+          />
+        </FadeIn>
       </div>
     </div>
   )

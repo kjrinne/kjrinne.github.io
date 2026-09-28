@@ -18,6 +18,7 @@
     main { max-width: 900px; margin: 0 auto; padding: 7rem 2rem 5rem; }
     .page-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-bottom: 0.75rem; }
     .section-title { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 3rem; color: #111; }
+    .section-gap { margin-top: 4.5rem; }
     .cards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
     .card { display: block; text-decoration: none; color: inherit; border: 1px solid #f0f0f0; border-radius: 8px; overflow: hidden; transition: box-shadow 0.2s ease, transform 0.2s ease; }
     .card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.10); transform: translateY(-2px); }
@@ -46,7 +47,21 @@
   </nav>
   <main>
     <p class="page-label">Projects</p>
-    <h1 class="section-title">Case Competitions</h1>
+    <h1 class="section-title">Builds</h1>
+    <div class="cards-grid">
+
+      <a class="card" href="https://claude.ai/artifact/DjboMyRr3hgHfxBdVexbRX" target="_blank" rel="noopener noreferrer">
+        <img class="card-image" src="/inbox-swipe-preview.png" alt="Inbox Swipe app icon" />
+        <div class="card-body">
+          <p class="card-label">iOS App &middot; 2026</p>
+          <p class="card-title">Inbox Swipe &mdash; a swipe-to-triage Gmail app built in SwiftUI</p>
+          <span class="card-cta">Try the Demo &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+
+    <h2 class="section-title section-gap">Case Competitions</h2>
     <div class="cards-grid">
 
       <a class="card" href="/Arcteryx Case.pdf" target="_blank" rel="noopener noreferrer">
